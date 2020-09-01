@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 14px;
+}
+:root {
+  --desaturated-Red: hsl(0, 36%, 70%);
+  --soft-Red: hsl(0, 93%, 68%);
+  --dark-Grayish-Red: hsl(0, 6%, 24%);
+}
+* {
+    box-sizing: border-box;
+  }
+  
+  .row::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+  
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+
+  /* Styling for mobile view */
+  body {
+    background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .logo {
+    padding: 25px;
+  }
+  #light {
+    font-weight: 200;
+    color: var(--desaturated-Red);
+  }
+  .content {
+    text-align: center;
+    padding: 35px;
+  }
+  #intro {
+    letter-spacing: 0.5em;
+  }
+  p {
+    color: var(--desaturated-Red);
+    margin-bottom: 30px;
+  }
+  input[type=text] {
+    width: 100%;
+    padding: 13px 26px;
+    border-radius: 30px;
+    color: var(--desaturated-Red) !important;
+    border-color: var(--desaturated-Red);
+    font-family: 'Josefin Sans', sans-serif;
+    background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    border-width: 1px;
+  }
+  input[type=text]::placeholder {
+    color: var(--desaturated-Red);
+  }
+  #button {
+    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    padding: 9px 16px;
+    width: 20%;
+    border-radius: 50px;
+    position: absolute;
+    left: 248px;
+    bottom: 0px;
+    text-align: center;
+    border-style: none;
+    border-color: none;
+  }
+  form {
+    position: relative;
+  }
+}
+
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-m-1 {width: 8.33%;}
+  .col-m-2 {width: 16.66%;}
+  .col-m-3 {width: 25%;}
+  .col-m-4 {width: 33.33%;}
+  .col-m-5 {width: 41.66%;}
+  .col-m-6 {width: 50%;}
+  .col-m-7 {width: 58.33%;}
+  .col-m-8 {width: 66.66%;}
+  .col-m-9 {width: 75%;}
+  .col-m-10 {width: 83.33%;}
+  .col-m-11 {width: 91.66%;}
+  .col-m-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}

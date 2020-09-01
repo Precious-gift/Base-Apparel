@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Base Apparel</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="row container">
+            <div class="heading">
+                <header>
+                    <div class="logo"><img src="images/logo.svg" alt="logo" style="width: 79px; height: 16.5px;"></div>
+                    <div class="banner"><img src="images/hero-mobile.jpg" alt="banner"></div>
+                </header>
+            </div>
+            <div class="content">
+                <h1 id="intro"><span id="light">WE'RE</span> <br> COMING <br> SOON</h1>
+                <p>
+                    Hellow fellow shoppers! We're currently building our new fashion store. Add your email below 
+                    to stay up-to-date with announcements and our launch deals.
+                </p>
+                <form action="#">
+                    <input type="text" placeholder="Email Address" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                    <button id="button" type="button" onclick="myFunction()"><img src="images/icon-arrow.svg" alt="submit"></button>
+                </form>
+                <p id="validate"></p>
+                
+            </div>
+        </div>
+        
+        <script src="function.js"></script>
+    </body>
+</html>
