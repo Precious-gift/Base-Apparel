@@ -38,6 +38,10 @@ body {
   .logo {
     padding: 25px;
   }
+  .logo img {
+    width: 79px; 
+    height: 16.5px;
+  }
   #light {
     font-weight: 200;
     color: var(--desaturated-Red);
@@ -113,4 +117,69 @@ body {
   .col-10 {width: 83.33%;}
   .col-11 {width: 91.66%;}
   .col-12 {width: 100%;}
+
+
+  /* Styling for desktop view */
+  body {
+    background-image: url('images/bg-pattern-desktop.svg');
+    background-size: contain;
+    height: 50vh;
+  }
+  .logo {
+    padding: 50px 250px;
+  }
+  .heading {
+    padding: 0;
+  }
+  .banner {
+    padding: 0;
+  }
+  #light {
+    font-weight: 200;
+    font-size: 50px;
+    color: var(--desaturated-Red);
+  }
+  .content {
+    text-align: left;
+    width: 58.33%;
+    padding: 50px 250px;
+    position: relative;
+    top: -700px;
+  }
+  #intro {
+    letter-spacing: 0.5em;
+    font-size: 50px;
+  }
+  p {
+    color: var(--desaturated-Red);
+    margin-bottom: 30px;
+  }
+  input[type=text] {
+    width: 100%;
+    padding: 13px 26px;
+    border-radius: 30px;
+    color: var(--desaturated-Red) !important;
+    border-color: var(--desaturated-Red);
+    font-family: 'Josefin Sans', sans-serif;
+    background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    border-width: 1px;
+  }
+  input[type=text]::placeholder {
+    color: var(--desaturated-Red);
+  }
+  #button {
+    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    padding: 9px 16px;
+    width: 20%;
+    border-radius: 50px;
+    position: absolute;
+    left: 248px;
+    bottom: 0px;
+    text-align: center;
+    border-style: none;
+    border-color: none;
+  }
+  form {
+    position: relative;
+  }
 }

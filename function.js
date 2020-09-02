@@ -15,3 +15,23 @@ function myFunction() {
         y = "Thank you";
     }
 }
+
+function changeImage(c) {
+    if (c.matches) {
+        document.getElementById('myImage').src = "images/hero-desktop.jpg";
+    }
+    
+}
+var c = window.matchMedia("(max-width: 768px)")
+changeImage(c)
+c.addListener(changeImage)
+
+
+function myDemo() {
+    let d = document.getElementById('demo');
+    if (window.matchMedia("(max-width: 700px)").matches) {
+        d.innerHTML = "The screen is less than, or equal to, 700 pixels wide.";
+    } else{
+        d.innerHTML = "The screen is at least 700 pixels wide.";
+    }
+}
