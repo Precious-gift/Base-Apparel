@@ -46,6 +46,9 @@ body {
     font-weight: 200;
     color: var(--desaturated-Red);
   }
+  .banner {
+    padding: 0px;
+  }
   .content {
     text-align: center;
     padding: 35px;
